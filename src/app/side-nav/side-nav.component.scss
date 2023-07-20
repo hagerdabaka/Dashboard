@@ -1,0 +1,38 @@
+.nav-items {
+    padding-top: 40px;
+
+   
+    .nav-item {
+      padding: 20px 20px;
+      cursor: pointer;
+      @media only screen and (max-width: 1300px) {
+        padding: 25px 40px;
+      }
+      &:hover {
+        background-color: rgb(1, 38, 69);
+      }
+      fa-icon ,.fa-solid {
+        margin-right: 20px;
+        font-size: 22px;
+      }
+      span {
+        display: inline;
+        @media only screen and (max-width: 1300px) {
+          display: none;
+        }
+      }
+    
+    }
+  }
+    @media (max-width:700px) {
+      .nav-items{
+        padding-top: 20px;
+        text-align: center;
+        position: fixed;
+        .nav-item {
+          padding: 15px 8px;
+          padding-right: 5px;
+        
+      }
+    }
+  }

@@ -1,0 +1,142 @@
+// sets
+
+$gl-ms: "screen and (max-width: 23.5em)"; // up to 360px
+$gl-xs: "screen and (max-width: 35.5em)"; // up to 568px
+$gl-sm: "screen and (max-width: 48em)"; // max 768px
+$gl-md: "screen and (max-width: 64em)"; // max 1024px
+$gl-lg: "screen and (max-width: 80em)"; // max 1280px
+
+// table style
+
+.container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 5% 5%;
+}
+table {
+  border-spacing: 1;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 6px;
+  overflow: hidden;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+
+  * {
+    position: relative;
+  }
+
+  td,
+  th {
+    padding-left: 8px;
+  }
+
+  thead tr {
+    height: 60px;
+    background: #5e7c975e;
+    font-size: 16px;
+  }
+
+  tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #e3f1d5;
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  td,
+  th {
+    text-align: left;
+    &.l {
+      text-align: right;
+    }
+    &.c {
+      text-align: center;
+    }
+    &.r {
+      text-align: center;
+    }
+  }
+}
+
+@media #{$gl-xs} {
+  table {
+    display: block;
+    > *,
+    tr,
+    td,
+    th {
+      display: block;
+    }
+
+    thead {
+      display: none;
+    }
+    tbody tr {
+      height: auto;
+      padding: 8px 0;
+      td {
+        padding-left: 45%;
+        margin-bottom: 12px;
+        &:last-child {
+          margin-bottom: 20px !important;
+        
+          border-bottom: 1px solid rgb(194, 194, 194);
+
+        }
+        &:before {
+          position: absolute;
+          font-weight: 700;
+          width: 40%;
+          left: 10px;
+          top: 0;
+        }
+
+        &:nth-child(1):before {
+          content: "ID";
+        }
+        &:nth-child(2):before {
+          content: "Image";
+        }
+        &:nth-child(3):before {
+          content: "Name";
+        }
+        &:nth-child(4):before {
+          content: "Category";
+        }
+        &:nth-child(5):before {
+          content: "Discount";
+        }
+
+      }
+    }
+  }
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+// body style
+
+blockquote {
+  color: white;
+  text-align: center;
+}
+
+ a{
+   background-color: rgb(1, 38, 69);
+   color: white;
+}
+
+.add{
+  box-shadow: 5px 5px 5px #939393 !important;
+   padding: 20px 20px;
+   @media only screen and (max-width:700px) {
+    box-shadow:none !important;
+    padding: 10px 10px;
+   }
+}

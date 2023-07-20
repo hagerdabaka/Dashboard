@@ -1,0 +1,53 @@
+<div class="container m-5  ">
+  <h2 class="my-5 text-center" >{{ isNew ? 'Add' : 'Edit' }} Product </h2>
+  <div class="container c">
+    <form (submit)="onSave()">
+
+      <div class="block m-2">
+        <label>Name</label>
+        <br>
+        <input type="text" [(ngModel)]="product.name" name="name" placeholder=" Product name" required>
+      </div>
+  
+      <div class="block m-2">
+        <label>Price</label>
+        <br>
+        <input type="number" [(ngModel)]="product.price" name="price"  placeholder=" Product price" required>
+      </div>
+  
+      <div class="block m-2">
+  
+        <label> Image</label>
+        <br>
+        <input type="text" [(ngModel)]="product.img" name="image" placeholder=" Product Link Image" required>
+  
+      </div>
+  
+  
+      <div class="block m-2">
+        <label>Category</label>
+        <br>
+        <input type="text" [(ngModel)]="product.category" name="category" placeholder=" Product Category" required>
+      </div>
+  
+  
+      <div class=" block m-2">
+        <label>Discount </label>
+        <br>
+        <input type="number" [(ngModel)]="product.discount" name="discount"  placeholder=" Product discount" required>
+      </div>
+  
+  <div class="text-center ">
+    
+    <button type="submit" class="btn ">{{ isNew ? 'Add' : 'Update'}}</button>
+  </div>
+    </form>
+  
+  </div>
+
+</div>
+
+
+<hr class="m-5 ">
+
+<app-product-list></app-product-list>

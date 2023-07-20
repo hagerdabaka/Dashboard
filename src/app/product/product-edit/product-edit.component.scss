@@ -1,0 +1,44 @@
+
+h2{
+    font-size: 30px;
+    font-weight:700 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.form {
+    
+    margin: 10% 10% !important;
+    padding: 2% 2%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+    width: 100%;
+    font-size: 18px;
+    
+  
+}
+
+label{
+    width: 100% ;
+    font-size: 22px;
+    font-weight: 700px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
+
+ input{
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    padding: 1% 1%;
+    margin: 1% 1%;
+    width: 80%;
+ }
+
+ .btn{
+     background-color: rgb(1, 38, 69);
+     box-shadow: rgba(0, 0, 0, 0.15) 2px 3px 3px 0px;
+     color: white;
+     padding: 1% 5%;
+      &:hover , &:focus , &:visited{
+        transition: all .3s .3s ease-in-out;
+        background: rgb(2, 85, 153) ;
+        transform: scale(110%);
+        
+      }
+ }
